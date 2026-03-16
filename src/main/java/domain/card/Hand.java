@@ -53,14 +53,14 @@ public class Hand {
     }
 
     public boolean isBlackjack() {
-        return satisfyBlackjackCardCount() && satisfyBlackjackScore();
+        return isBlackjackCardCount() && isBlackjackScore();
     }
 
-    private boolean satisfyBlackjackCardCount() {
+    private boolean isBlackjackCardCount() {
         return cards.size() == BLACK_JACK_CARD_COUNT_CONDITION;
     }
 
-    private boolean satisfyBlackjackScore() {
+    private boolean isBlackjackScore() {
         return getResultScore() == BLACK_JACK_SCORE_CONDITION;
     }
 
